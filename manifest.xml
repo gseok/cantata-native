@@ -3,18 +3,19 @@
     <Id>hF1jRugBXt</Id>
     <Version>1.0.0</Version>
     <Type>C++App</Type>
-    <Author/>
     <Descriptions>
         <Description Locale="eng-GB"/>
     </Descriptions>
+    <Url/>
     <Requirements>
-        <Feature Name="http://tizen.org/feature/platform.core.cpu.arch.x86">true</Feature>
-        <Feature Name="http://tizen.org/feature/platform.core.fpu.arch.vfpv3">true</Feature>
+        <Feature Name="http://tizen.org/feature/platform.core.cpu.arch">x86</Feature>
+        <Feature Name="http://tizen.org/feature/platform.core.fpu.arch">vfpv3</Feature>
     </Requirements>
     <Apps>
         <ApiVersion>2.0</ApiVersion>
         <Privileges>
             <Privilege>http://tizen.org/privilege/content.read</Privilege>
+            <Privilege>http://tizen.org/privilege/systeminfo</Privilege>
         </Privileges>
         <UiApp Main="True" MenuIconVisible="True" Name="cantata">
             <UiScalability BaseScreenSize="Normal" CoordinateSystem="Logical" LogicalCoordinate="720"/>
@@ -23,7 +24,7 @@
                 <DisplayName Locale="eng-GB">cantata</DisplayName>
             </DisplayNames>
             <Icons>
-                <Icon Section="MainMenu" Type="Xhigh">mainmenu.png</Icon>
+                <Icon Section="MainMenu">mainmenu.png</Icon>
             </Icons>
             <LaunchConditions/>
             <Notifications/>
