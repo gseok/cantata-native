@@ -5,11 +5,13 @@
     <Type>C++App</Type>
     <Requirements>
         <Feature Name="http://tizen.org/feature/platform.core.cpu.arch.x86">true</Feature>
+        <Feature Name="http://tizen.org/feature/platform.core.fpu.arch.vfpv3">true</Feature>
     </Requirements>
     <Apps>
         <ApiVersion>2.0</ApiVersion>
         <Privileges>
             <Privilege>http://tizen.org/privilege/content.read</Privilege>
+            <Privilege>http://tizen.org/privilege/packageinfo</Privilege>
             <Privilege>http://tizen.org/privilege/telephony</Privilege>
         </Privileges>
         <UiApp Main="True" MenuIconVisible="True" Name="cantata">
